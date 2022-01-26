@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #4ca1af;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.ucll.javafxspringboot.controller.LoginController">
+
+    <Button fx:id="login" cancelButton="true" layoutX="127.0" layoutY="142.0" onAction="#loginToWhatsApp"> Login</Button>
+   <TextField fx:id="phone" alignment="CENTER" layoutX="30.0" layoutY="80.0" prefHeight="25.0" prefWidth="245.0" promptText="phone" />
+   <Label layoutX="56.0" layoutY="14.0" text="Welcome to Whatsup!" textFill="#f3f5f3">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="fout" alignment="CENTER" layoutX="28.0" layoutY="107.0" prefHeight="17.0" prefWidth="245.0" textFill="#fc2323" />
+   <ImageView fitHeight="150.0" fitWidth="40.0" layoutX="130.0" layoutY="38.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@person_pin.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

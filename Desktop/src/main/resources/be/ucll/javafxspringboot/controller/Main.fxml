@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="976.0" prefWidth="1311.0" style="-fx-background-color: #4ca1af;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.ucll.javafxspringboot.controller.MainController">
+    <children>
+        <Label alignment="CENTER" layoutY="6.0" prefHeight="25.0" prefWidth="1311.0" text="WhatsUp!" textFill="#fcfcfc">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
+        <MenuBar fx:id="menubar" layoutX="14.0" layoutY="84.0" prefHeight="27.0" prefWidth="198.0">
+            <menus>
+                <Menu fx:id="contacts" mnemonicParsing="false" text="Contacts">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openContacts" text="List" />
+                    </items>
+                </Menu>
+                <Menu fx:id="groups" mnemonicParsing="false" text="Groups">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#createGroup" text="Create group" />
+                    </items>
+                </Menu>
+                <Menu fx:id="account" mnemonicParsing="false" onAction="#logout" text="Account">
+                    <items>
+                        <MenuItem fx:id="logout" mnemonicParsing="false" text="logout" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label fx:id="userGreet" alignment="CENTER" layoutX="239.0" layoutY="83.0" prefHeight="17.0" prefWidth="1058.0">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+          <TextArea fx:id="inputText" layoutX="396.0" layoutY="865.0" prefHeight="68.0" prefWidth="673.0" />
+          <Button fx:id="sendButton" layoutX="1079.0" layoutY="865.0" mnemonicParsing="false" onAction="#sendMessage" text="Send" />
+      <SplitPane fx:id="splitView" layoutX="16.0" layoutY="177.0" prefHeight="675.0" prefWidth="1254.0" style="-fx-background-color: #4ca1af;" />
+      <Button fx:id="sendImage" layoutX="1079.0" layoutY="899.0" mnemonicParsing="false" text="Image" />
+      <Label fx:id="contactOrGroup" alignment="CENTER_RIGHT" layoutX="807.0" layoutY="150.0" prefHeight="0.0" prefWidth="463.0" textFill="#28d356">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="126.0" fitWidth="167.0" layoutX="593.0" layoutY="35.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@person_pin.png" />
+         </image></ImageView>
+    </children>
+</AnchorPane>
